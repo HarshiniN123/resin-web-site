@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Resinarts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="main-section">
+        <div class="toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <nav class="navbar">
+                <a href="{%url 'home'%}">Home</a>
+                <button class="dropdown-btn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="{% url 'products' %}">Frames</a>
+                    <a href="{% url 'products' %}">Wooden Frames</a>
+                    <a href="{% url 'products' %}">Keychains</a>
+                    <a href="{% url 'products' %}">Bracelets</a>
+                    <a href="{% url 'products' %}">Wall Clocks</a>
+                </div>
+                <a href="{% url 'discount' %}">Discount</a>
+                <a href="{%url 'customize'%}">Orders</a>
+                <a href="{%url 'about'%}">About Us</a>
+                <a href="{%url 'about' %}">Contact</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </nav>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content');
+            const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                sidebar.classList.toggle('active');
+                content.classList.toggle('shifted');
+            });
+
+            dropdownBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.classList.toggle('active');
+                    const dropdownContainer = btn.nextElementSibling;
+                    if (dropdownContainer.style.maxHeight) {
+                        dropdownContainer.style.maxHeight = null;
+                    } else {
+                        dropdownContainer.style.maxHeight = dropdownContainer.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

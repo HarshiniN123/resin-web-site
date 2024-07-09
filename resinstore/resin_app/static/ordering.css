@@ -1,0 +1,71 @@
+*{
+    font-family: "Sofia", cursive;
+  }
+h1{
+    margin-left: 29rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: x-large;
+  }
+body{
+    background-image: url(images/orders_cust.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+fieldset{
+    border-radius: 5px;
+    border: 3px solid black;
+    margin-top: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 5px 20px;
+    margin: 2px 29rem;
+    align-items: center;
+    /* font-weight: 500;
+    font-size: smaller; */
+}
+button{
+    margin-left: 175px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 5px 20px;
+    border:none;
+    font-weight: 500;
+    font-size:large;
+}
+button:hover{
+    background: lightgray;
+    color: black;
+}
+input{
+    padding: 3px 50px;
+    border-radius: 5px;
+    background-color:whitesmoke; 
+    color: black;
+    font-size: smaller;
+    margin: 3px;
+}
+select {
+    padding: 3px 30px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
+    font-weight: 500;
+    font-size: large;
+}
+label{
+    font-weight: 500;
+    font-size: large;
+}
+
+#divprice{
+    margin-left: 15em;
+    font-size: large;
+}

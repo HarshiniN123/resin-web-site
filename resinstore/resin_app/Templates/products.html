@@ -1,0 +1,475 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'products.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sidenav">
+  <button class="dropdown-btn">Frames 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#First">Four Inch Frame</a>
+    <a href="#Second">Six Inch Frame</a>
+    <a href="#">Eight Inch Frames</a>
+    <a href="#">Twelve Inch Frames</a>
+    <a href="#">12X9 Inch Frames</a>
+  </div>
+  <button class="dropdown-btn">Wooden Frames
+    <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+   <a href="#">Eight Inch Frame</a>
+   <a href="#">Ten Inch Frame</a>
+   <a href="#">Twelve Inch Frame</a>
+</div> 
+<button class="dropdown-btn">Keychains
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+ <a href="#">Photo Placed Keychains</a>
+ <a href="#">Baby Feet Keychains</a>
+ <a href="#">Alphabet Keychains</a>
+ <a href="#">Spotify Keychains</a>
+</div> 
+    <a href="#">Bracelets</a>
+    <a href="#">Wall Clocks</a>
+</div>
+<div class="main">
+  <h1>Frames</h1>
+  <h2 id="First">Four Inch Frames </h2>
+  <!-- Agate 4 inch frames 1 -->
+<div class="photos"> 
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_4_1.jpg' %}"alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_4_2.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_4_3.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!--Round four inch frames 2 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Round_4_1.jpg' %}" alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Round_4_2.jpg' %}" alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Round_4_3.jpg' %}" alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+</div><br><br>
+<!-- 3 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Heart_4_1.jpg' %}"alt="Not Found">
+      <h3>Heart Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Heart_4_2.jpg' %}" alt="Not Found">
+      <h3>Heart Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Heart_4_3.jpg' %}" alt="Not Found">
+      <h3>Heart Frame</h3>
+      <p>RS.500</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 4 -->
+<h2 id="#Second">Six Inch Frames</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_6_1.jpg' %}"alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_6_2.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_6_3.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 5 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Round_6_1.jpg' %}"alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Round_6_2.jpg' %}" alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Round_6_3.jpg' %}" alt="Not Found">
+      <h3>Round Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 6 -->
+<h2>Eight Inch Frames</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_8_1.jpg' %}"alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_8_2.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_8_3.jpg' %}" alt="Not Found">
+      <h3>Agate Frame</h3>
+      <p>RS.1100</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+ <!-- 7 -->
+<h2>Twelve Inch Frames</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/12_1.jpg' %}"alt="Not Found">
+      <h3>12x9 Frame</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/12_1.jpg' %}" alt="Not Found">
+      <h3>12x9 Frame</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/12_1.jpg' %}" alt="Not Found">
+      <h3>12x9 Frame</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 8 -->
+<h1>WOODEN FRAMES</h1>
+<h2>Twelve Inch Frames</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}"alt="Not Found">
+      <h3>Eight inch Frames</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Eight inch Frames</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Eight inch Frames</h3>
+      <p>RS.2700</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 9 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}"alt="Not Found">
+      <h3>Ten inch Frames</h3>
+      <p>RS.3600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Ten inch Frames</h3>
+      <p>RS.3600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Ten inch Frames</h3>
+      <p>RS.3600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 10 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}"alt="Not Found">
+      <h3>Twelve inch Frames</h3>
+      <p>RS.4600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Twelve inch Frames</h3>
+      <p>RS.4600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Twelve inch Frames</h3>
+      <p>RS.4600</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 11 -->
+<h1>Keychains</h1>
+<h2>PHOTO PLACED KEYCHAINS</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_key_1.jpg' %}"alt="Not Found">
+      <h3>Agate Keychain</h3>
+      <p>RS.250</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_key_2.jpg' %}" alt="Not Found">
+      <h3>Agate Keychain</h3>
+      <p>RS.250</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Agate_key_3.jpg' %}" alt="Not Found">
+      <h3>Agate Keychain</h3>
+      <p>RS.250</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 12 -->
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/round_key_1.jpg' %}"alt="Not Found">
+      <h3>Round Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/round_key_2.jpg' %}" alt="Not Found">
+      <h3>Round Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/round_key_3.jpg' %}" alt="Not Found">
+      <h3>Round Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 13 -->
+<div class="photos">
+    <div class="photo-item">
+        <img src="{% static 'images/Heart_key_1.jpg' %}"alt="Not Found">
+        <h3>Heart Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/Heart_key_2.jpg' %}" alt="Not Found">
+        <h3>Heart Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/Heart_key_3.jpg' %}" alt="Not Found">
+        <h3>Heart Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+</div><br><br>
+<!-- 14 -->
+<div class="photos">
+    <div class="photo-item">
+        <img src="{% static 'images/Rec_key_1.jpg' %}"alt="Not Found">
+        <h3>Rectangle Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/Rec_key_2.jpg' %}" alt="Not Found">
+        <h3>Rectangle Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/Rec_key_3.jpg' %}" alt="Not Found">
+        <h3>Rectangle Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+</div><br><br>
+<!-- 15 -->
+<div class="photos">
+    <div class="photo-item">
+        <img src="{% static 'images/sq_key_1.jpg' %}"alt="Not Found">
+        <h3>Square Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/sq_key_2.jpg' %}" alt="Not Found">
+        <h3>Square Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/sq_key_3.jpg' %}" alt="Not Found">
+        <h3>Square Keychain</h3>
+        <p>RS.250</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+</div><br><br>
+<!-- 16 -->
+<h2>BABY FEET KEYCHAINS</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/feet_1.jpg' %}"alt="Not Found">
+      <h3>Baby Feet Keychain</h3>
+      <p>RS.270</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/feet_2.jpg' %}" alt="Not Found">
+      <h3>Baby Feet Keychain</h3>
+      <p>RS.270</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/feet_3.jpg' %}" alt="Not Found">
+      <h3>Baby Feet Keychain</h3>
+      <p>RS.270</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 17 -->
+<h2>ALPHABET KEYCHAINS</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}"alt="Not Found">
+      <h3>Alphabet Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Alphabet Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+      <h3>Alphabet Keychain</h3>
+      <p>RS.210</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+<!-- 17 -->
+<div class="photos">
+    <div class="photo-item">
+        <img src="{% static 'images/customize_bac.png' %}"alt="Not Found">
+        <h3>Alphabet Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+        <h3>Alphabet Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+    </div>
+    <div class="photo-item">
+        <img src="{% static 'images/customize_bac.png' %}" alt="Not Found">
+        <h3>Alphabet Keychain</h3>
+        <p>RS.210</p>
+        <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  </div><br><br>
+<!-- 18 -->
+<h2>SPOTIFY KEYCHAINS</h2>
+<div class="photos">
+  <div class="photo-item">
+      <img src="{% static 'images/Spotify_1.jpg' %}"alt="Not Found">
+      <h3>Spotify Keychain</h3>
+      <p>RS.350</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Spotify_2.jpg' %}" alt="Not Found">
+      <h3>Spotify Keychain</h3>
+      <p>RS.350</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+  </div>
+  <div class="photo-item">
+      <img src="{% static 'images/Spotify_3.jpg' %}" alt="Not Found">
+      <h3>Spotify Keychain</h3>
+      <p>RS.350</p>
+      <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+</div>
+</div><br><br>
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html> 

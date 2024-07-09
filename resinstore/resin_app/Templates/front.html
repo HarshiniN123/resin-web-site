@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'frontsuh.css' %}">
+</head>
+<body>
+    <div class="transbox">
+        <h1>MAGICIAL RESIN STORE</h1>
+        <p>UP TO 10% OFFER ON YOUR FIRST ORDER</p>
+        <div class="button-container">
+            <button type="submit"><a href="{% url 'login' %}">Login</a></button>
+            <button type="submit"><a href="{% url 'signup' %}">Signup</a></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stand.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidenav">
+        <button class="dropdown-btn">Wooden Stand 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="{% url 'stand' %}">Four Inch Wooden Stand</a>
+          <a href="{% url 'stand' %}">Six Inch Wooden Stand</a>
+          <a href="{% url 'stand' %}">Eight Inch Wooden Stand</a>
+        </div>
+        <button class="dropdown-btn">Metal Stand 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="{% url 'stand' %}">Four Inch Metal Stand</a>
+            <a href="{% url 'stand' %}">Six Inch Metal Stand</a>
+            <a href="{% url 'stand' %}">Eight Inch Metal Stand</a>
+          </div>
+    </div>
+    <div class="main">
+        <h1>Frames</h1>
+        <h2>Four Inch Frames</h2>
+        <!-- Agate 4 inch frames 1 -->
+        <div class="photos"> 
+            <div class="photo-item">
+                <img src="{% static 'images/Agate_4_1.jpg' %}" alt="Not Found">
+                <h3>Agate Frame</h3>
+                <p>RS.500</p>
+                <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+            </div>
+            <div class="photo-item">
+                <img src="{% static 'images/Agate_4_2.jpg' %}" alt="Not Found">
+                <h3>Agate Frame</h3>
+                <p>RS.500</p>
+                <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+            </div>
+            <div class="photo-item">
+                <img src="{% static 'images/Agate_4_3.jpg' %}" alt="Not Found">
+                <h3>Agate Frame</h3>
+                <p>RS.500</p>
+                <a href="{% url 'customize' %}"> <button type="submit">Shop Now</button> </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdowns = document.getElementsByClassName("dropdown-btn");
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

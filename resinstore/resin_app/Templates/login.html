@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofia&display=swap" rel="stylesheet">
+<body>
+    <div class="box_1">
+<h1>Login</h1>
+<form method="POST">
+    {% csrf_token %} {{ form.as_p }}
+
+    <button type="submit">Login</button>
+    <a href="{% url 'signup' %}">Dont have Account Create</a>
+</form>
+</div>
+</body>

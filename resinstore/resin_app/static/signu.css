@@ -1,0 +1,71 @@
+*{
+    font-family: "Sofia", cursive;
+    font-style: normal;
+    font-size: large;
+}
+body{
+    background-image: url(images/login_bac.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.box_1{
+    width: 38%;
+    padding: 30px;
+    border: 1px solid black;
+    margin-left: 40em;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    /* line-height: 10px; */
+}
+input{
+    padding: 5px 15px;
+    background:#fff;
+    color: #545d7a;
+    width: 60%;
+    border: 1px solid #dae1f1;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+button{
+    border-radius: 5px;
+    background:white;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border:none;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+button:hover{
+    background: lightgray;
+    color: black;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 5em;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    /* margin-bottom: 5px; */
+    font-size: 15px;
+    font-weight: 100;
+    /* line-height: 15px; */
+}
+p{
+    font-size: 1%;
+    font-weight: 1px; 
+    margin-bottom: 15px;
+}
